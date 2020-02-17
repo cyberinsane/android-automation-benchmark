@@ -1,0 +1,206 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddCardActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cardActionsContainer"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:id="@+id/card_form_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/padding_x_large"
+                android:paddingTop="@dimen/padding_large"
+                android:paddingEnd="@dimen/padding_x_large"
+                android:paddingBottom="@dimen/padding_large">
+
+                <ImageView
+                    android:id="@+id/cardBrandIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_credit_card_black_24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ccNumberLayout"
+                        style="@style/AutomationBenchmarkAppTextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ccNumber"
+                            style="@style/AutomationBenchmarkAppTextInputLayout.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/cc_number_hint"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="phone"
+                            android:maxLength="19"
+                            android:nextFocusForward="@id/ccCVV"
+                            android:theme="@style/AutomationBenchmarkAppTextInputLayout.EditText" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ccCVVLayout"
+                        style="@style/AutomationBenchmarkAppTextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.2">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ccCVV"
+                            style="@style/AutomationBenchmarkAppTextInputLayout.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/cc_cvv_hint"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="number"
+                            android:nextFocusForward="@id/ccExpDate"
+                            android:theme="@style/AutomationBenchmarkAppTextInputLayout.EditText" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ccExpDateLayout"
+                        style="@style/AutomationBenchmarkAppTextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ccExpDate"
+                            style="@style/AutomationBenchmarkAppTextInputLayout.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/cc_exp_date_hint"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="phone"
+                            android:longClickable="false"
+                            android:maxLength="5"
+                            android:nextFocusForward="@id/ccBillingZip"
+                            android:theme="@style/AutomationBenchmarkAppTextInputLayout.EditText" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/ccBillingZipLayout"
+                        style="@style/AutomationBenchmarkAppTextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.6">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ccBillingZip"
+                            style="@style/AutomationBenchmarkAppTextInputLayout.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/cc_billing_zip_hint"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:nextFocusForward="@id/ccCardholderName"
+                            android:theme="@style/AutomationBenchmarkAppTextInputLayout.EditText" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ccNameLayout"
+                    style="@style/AutomationBenchmarkAppTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ccCardholderName"
+                        style="@style/AutomationBenchmarkAppTextInputLayout.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cc_cardholder_name_hint"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="textPersonName"
+                        android:theme="@style/AutomationBenchmarkAppTextInputLayout.EditText" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/cardActionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_brown"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submitCard"
+                style="@style/Button.Brown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:letterSpacing="0.17"
+                android:padding="@dimen/padding_large"
+                android:text="@string/add_card_done_label"
+                android:textAllCaps="true"
+                android:textAppearance="@style/AutomationBenchmark.TextAppearance.XXSmall"
+                android:textColor="@android:color/white"
+                tools:text="Done" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
