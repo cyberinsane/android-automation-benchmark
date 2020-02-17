@@ -8,4 +8,121 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- TextInputLayout -->
+    <style name="AutomationBenchmarkAppTextInputLayout" parent="android:Widget">
+        <item name="android:textColorHint">@color/textNormalStateWithOpacity</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:colorAccent">@color/textNormalStateWithOpacity</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="colorControlActivated">@color/colorControlActivated</item>
+        <item name="colorControlHighlight">@color/textNormalStateWithOpacity</item>
+        <item name="android:textColorPrimary">@color/textNormalState</item>
+    </style>
+    <!-- TextAppearance -title/description/editText styles -->
+    <style name="AutomationBenchmarkAppTextAppearance" parent="@android:style/TextAppearance" />
+
+    <style name="AutomationBenchmarkAppTextAppearance.Title" parent="@android:style/TextAppearance">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AutomationBenchmarkAppTextInputLayout.EditText">
+        <item name="android:textColorHint">@color/textNormalStateWithOpacity</item>
+        <item name="android:textColor">@color/chocolate_brown</item>
+        <item name="android:textCursorDrawable">@drawable/chip_cursor</item>
+    </style>
+
+    <style name="AutomationBenchmarkAppTextAppearance.HintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/textNormalStateWithOpacity</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AutomationBenchmarkAppTextAppearance.Title.Button">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:letterSpacing">0.17</item>
+    </style>
+
+    <style name="AutomationBenchmarkAppTextAppearance.Title.Button.TextView">
+        <item name="android:textColor">@color/rusty_red</item>
+    </style>
+
+    <style name="AutomationBenchmarkAppTextAppearance.Header">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/textNormalState</item>
+    </style>
+
+    <style name="AutomationBenchmarkAppTextAppearance.ErrorHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/errorRed</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AutomationBenchmarkAppTextInputLayout.EditText.HelpText" parent="AutomationBenchmark.TextAppearance.Small">
+        <item name="android:textColor">@color/greyish_brown</item>
+    </style>
+
+    <!-- Text Size Styles -->
+    <style name="AutomationBenchmark.TextAppearance.XXSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_size_xx_small</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.XSmall" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_size_x_small</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.Small" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.MediumLarge" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_size_medium_large</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.Large" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.Larger" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_larger</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.XLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_x_large</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.XXLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_xx_large</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.XXXLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_xxx_large</item>
+    </style>
+
+    <style name="AutomationBenchmark.TextAppearance.XXXXLarge" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_xxxx_large</item>
+    </style>
+
+    <style name="Button.Brown" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:theme">@android:style/ThemeOverlay.Material.Dark</item>
+        <item name="android:background">@drawable/button_brown_bg</item>
+    </style>
+
+    <style name="BaseTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="BaseTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BaseTheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+        <item name="android:actionMenuTextColor">@color/greyish_brown</item>
+    </style>
+
+    <style name="Button.Brown.Pill">
+        <item name="android:background">@drawable/button_brown_pill_bg</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@drawable/button_brown_pill_text</item>
+    </style>
+
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/payment_card_margin"
+    android:layout_marginEnd="@dimen/payment_card_margin"
+    android:background="@drawable/card_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/checkout_action_credit_card"
+        style="@style/Button.Brown.Pill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_x_large"
+        android:layout_marginEnd="@dimen/margin_x_large"
+        android:gravity="center"
+        android:text="@string/checkout_action_add_credit_card" />
+
+</LinearLayout>

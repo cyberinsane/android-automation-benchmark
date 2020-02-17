@@ -3,4 +3,43 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!-- Core design theme colors -->
+    <color name="chocolate_brown">#451400</color>
+    <color name="chocolate_brown_disabled">#66451400</color>
+    <color name="greyish_brown">#786259</color>
+    <color name="greyish_brown_disabled">#66786259</color>
+    <color name="brown_grey">#917B6B</color>
+    <color name="pinkish_grey">#D4CBC7</color>
+    <color name="light_grey">#dfd9d3</color>
+    <color name="beige">#F7F2ED</color>
+    <color name="rusty_red">#AD2118</color>
+    <color name="off_white">#F8F6F4</color>
+    <color name="grey">#59d4cbc7</color>
+    <color name="transparent_beige">#32F7F2ED</color>
+    <color name="light_brown">#977D70</color>
+    <color name="dark_grey">#5f6368</color>
+    <color name="dark_red">#d0021b</color>
+
+    <color name="mustard">#C08C16</color>
+    <color name="dark_mustard">#a76721</color>
+    <color name="white_two">#d8d8d8</color>
+    <color name="beige_two">#faf7f4</color>
+    <color name="avocado">#90a035</color>
+    <color name="hint_color">#a79993</color>
+    <color name="light_blue">#5d5d82</color>
+
+    <color name="errorRed">#FF3D3D</color>
+
+    <color name="background_menu_header">#EEE6DF</color>
+    <color name="toast_parent_background">#99000000</color>
+
+    <color name="textNormalState">@color/greyish_brown</color>
+    <color name="textNormalStateWithOpacity">#ab9d97</color>
+
+    <color name="colorControlActivated">@color/greyish_brown</color>
+    <color name="colorControlNormal">@color/pinkish_grey</color>
+    <color name="colorControlHighlight">#26000000</color>
+
+    <color name="background">@color/colorPrimary</color>
+    <color name="divider">@color/pinkish_grey</color>
 </resources>

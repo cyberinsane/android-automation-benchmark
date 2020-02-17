@@ -3,7 +3,7 @@
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_register">Sign Up</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
@@ -12,4 +12,71 @@
     <string name="account">Account</string>
     <string name="home">Home</string>
     <string name="bag">Bag</string>
+    <string name="cc_number_hint">Credit Card Number</string>
+    <string name="gc_number_hint">Gift Card Number</string>
+    <string name="cc_cvv_hint">CVV</string>
+    <string name="cc_exp_date_hint">MM/YY</string>
+    <string name="cc_cardholder_name_hint">Cardholder Name</string>
+    <string name="cc_billing_zip_hint">Billing Zip</string>
+    <string name="add_credit_card_label">Add a Credit Card</string>
+    <string name="scan_card_label">Scan Card</string>
+    <string name="scan_gift_card_label">Scan Gift Card</string>
+    <string name="add_card_done_label">Done</string>
+    <string name="card_details_title">Card Details</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="create_account_header">Create an account </string>
+    <string name="create_account_form_hint_first_name">First Name</string>
+    <string name="create_account_form_hint_last_name">Last Name</string>
+    <string name="create_account_form_hint_email_address">Email Address</string>
+    <string name="create_account_form_hint_password">Password</string>
+    <string name="create_account_form_hint_password_guide">Create a password with these requirements:</string>
+    <string name="create_account_form_hint_phone_no">Mobile Number</string>
+    <string name="create_account_form_mobile_opt_in">For security and order related questions only.</string>
+    <string name="signup_terms">Terms &amp; Conditions</string>
+    <string name="email_address_empty">Email address is required</string>
+    <string name="email_address_invalid">Email looks invalid. Try again?</string>
+    <string name="password_empty">Password is required</string>
+    <string name="first_name_invalid">No special characters allowed</string>
+    <string name="first_name_empty">First name is required</string>
+    <string name="last_name_invalid">No special characters allowed</string>
+    <string name="last_name_empty">Last name is required</string>
+    <string name="mobile_no_empty">Mobile number is required</string>
+    <string name="mobile_no_invalid">Mobile number is incomplete</string>
+    <string name="password_invalid">Password is too simple. Use the guide.</string>
+    <string name="password_previously_used">New Password can\'t match your last seven.</string>
+
+    <!-- Sign In -->
+    <string name="sign_in_header">Build your dreams, then eat them.</string>
+    <string name="sign_in_form_hint_email_address">Email Address</string>
+    <string name="sign_in_form_hint_password">Password</string>
+    <string name="sign_in_forgot_password">Forgot password</string>
+    <string name="sign_in_general_error_message">The email or password you entered isn\'t quite right.</string>
+    <string name="sign_in_form_hint_password_error">As a reminder your password contains:\nat least 8 Characters | ABC | abc | 123 | !@%</string>
+
+    <!-- Password -->
+    <string name="password_minimum_characters">8 Characters</string>
+    <string name="password_uppercase_letters_hint">ABC</string>
+    <string name="password_lowercase_letters_hint">abc</string>
+    <string name="password_digits_hint">123</string>
+    <string name="password_specialchar_hint">"!@%"</string>
+
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_masked">\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022</string>
+    <string name="phone">phone</string>
+    <string name="cont_profile_name_text">Profile Name Text</string>
+    <string name="cont_profile_email_text">Profile Email Text</string>
+    <string name="cont_profile_password_text">Profile Password Text</string>
+    <string name="cont_profile_phone_text">Profile Phone Text</string>
+    <string name="cont_profile_birthday_text">Profile Birthday Text</string>
+    <string name="cont_profile_zipcode_text">Profile Zipcode Text</string>
+    <string name="zipcode">Zip Code</string>
+    <string name="birthday">Birthday</string>
+    <string name="optional">Optional</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="checkout_action_add_credit_card">+ Credit Card</string>
+    <string name="checkout_action_max_credit_card">Max Credit Card Saved</string>
 </resources>
