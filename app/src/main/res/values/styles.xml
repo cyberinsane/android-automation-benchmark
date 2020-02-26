@@ -125,4 +125,28 @@
         <item name="android:textColor">@drawable/button_brown_pill_text</item>
     </style>
 
+    <style name="Button.White" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:theme">@android:style/ThemeOverlay.Material.Light</item>
+    </style>
+
+    <style name="Button.White.Pill">
+        <item name="android:background">@drawable/button_white_pill_bg</item>
+        <item name="android:textColor">@drawable/button_white_pill_text</item>
+    </style>
+
+    <style name="Chipotle.TextAppearance.Small" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Chipotle.TextAppearance.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <style name="Chipotle.TextAppearance.MediumLarge" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/text_size_medium_large</item>
+    </style>
+
+    <style name="Chipotle.TextAppearance.Larger" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/text_size_larger</item>
+    </style>
 </resources>

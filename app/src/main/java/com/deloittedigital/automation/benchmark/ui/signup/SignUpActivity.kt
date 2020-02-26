@@ -42,13 +42,13 @@ class SignUpActivity : AppCompatActivity(R.layout.activity_sign_up) {
                 )
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
-            }else {
+            } else {
                 showError()
             }
         }
     }
 
     private fun showError() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        //no-op
     }
 }

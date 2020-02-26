@@ -79,4 +79,16 @@
 
     <string name="checkout_action_add_credit_card">+ Credit Card</string>
     <string name="checkout_action_max_credit_card">Max Credit Card Saved</string>
+
+    <string name="remove">Remove</string>
+    <string name="expired">Expired</string>
+    <string name="max_credit_cards">Maximum Credit Card Added</string>
+    <string name="add_credit_cards">Add Credit Card</string>
+    <string name="checkout">Checkout</string>
+
+    <string name="proceed_to_checkout">"Proceed to Check Out?"</string>
+    <string name="okay">Okay</string>
+    <string name="proceeding_to_checkout">"OK, proceeding to Checkout."</string>
+    <string name="cancel">Cancel</string>
+    <string name="stay_in_bag">Staying in bag</string>
 </resources>

@@ -2,6 +2,7 @@ package com.deloittedigital.automation.benchmark.ui
 
 import android.content.SharedPreferences
 import com.deloittedigital.automation.benchmark.AppClass
+import java.util.*
 
 object ShareDataHolder {
 
@@ -28,6 +29,7 @@ object ShareDataHolder {
 
         return true
     }
+
 
     private fun getData(): String? {
         return sharedPref?.getString("abc", null)
@@ -60,7 +62,7 @@ object ShareDataHolder {
     fun validateUser(emailId: String): Boolean {
         val tempArray = getData()?.split(":")
         tempArray?.forEach {
-            if (it.contains(emailId)) {
+            if (it == emailId) {
                 return true
             }
         }
@@ -72,7 +74,7 @@ object ShareDataHolder {
         val tempArray = getData()?.split(":")
 
         tempArray?.forEach {
-            if (it.contains(password)) {
+            if (it == password) {
                 return true
             }
         }
@@ -107,6 +109,38 @@ object ShareDataHolder {
         val editor = this.sharedPref?.edit()
         editor?.putString("keepUser", "")
         editor?.apply()
+    }
+
+    fun putUserCardData(cardNumber: String?, expiryDate: String,
+        cardHolderName: String?, zipCode: String?, emailId: String): Boolean {
+
+        val temp = StringBuilder().apply {
+            append(cardNumber)
+            append(",")
+            append(expiryDate)
+            append(",")
+            append(cardHolderName)
+            append(",")
+            append(zipCode)
+        }
+
+        var tempString = sharedPref?.getString(emailId, null)
+
+        tempString = if (tempString.isNullOrEmpty()) {
+            temp.toString()
+        } else {
+            StringBuilder(temp).append(":").append(tempString).toString()
+        }
+        val editor = this.sharedPref?.edit()
+        editor?.putString(emailId, tempString)
+        editor?.apply()
+
+        return true
+
+    }
+
+    fun fetchUserCardData(emailId: String): List<String>? {
+        return sharedPref?.getString(emailId, null)?.split(":")
     }
 
 }
