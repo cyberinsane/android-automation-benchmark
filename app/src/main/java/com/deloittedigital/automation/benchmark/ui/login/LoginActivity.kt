@@ -27,7 +27,8 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get<LoginViewModel>(
-            LoginViewModel::class.java)
+            LoginViewModel::class.java
+        )
 
         if (ShareDataHolder.getLoggedInUser().isNotEmpty()) {
             startActivity(Intent(this, MainActivity::class.java))
@@ -57,10 +58,12 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
         return when (viewModel?.verifyUserName(username.text.toString())) {
             INVALID -> {
                 username.error = getString(R.string.email_address_invalid)
+                username.requestFocus()
                 false
             }
             ValidationState.EMPTY -> {
                 username.error = getString(R.string.email_address_empty)
+                username.requestFocus()
                 false
             }
             VALID -> {
@@ -74,6 +77,7 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
         return when (viewModel?.verifyPassword(password.text.toString())) {
             INVALID -> {
                 password.error = getString(R.string.password_invalid)
+                password.requestFocus()
                 false
             }
             VALID -> {
@@ -81,6 +85,7 @@ class LoginActivity : AppCompatActivity(R.layout.activity_login) {
             }
             ValidationState.EMPTY -> {
                 password.error = getString(R.string.password_empty)
+                password.requestFocus()
                 false
             }
             else -> false

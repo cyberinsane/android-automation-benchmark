@@ -60,7 +60,7 @@ object ShareDataHolder {
     fun validateUser(emailId: String): Boolean {
         val tempArray = getData()?.split(":")
         tempArray?.forEach {
-            if (it.contains(emailId)) {
+            if (it == emailId) {
                 return true
             }
         }
@@ -72,7 +72,7 @@ object ShareDataHolder {
         val tempArray = getData()?.split(":")
 
         tempArray?.forEach {
-            if (it.contains(password)) {
+            if (it == password) {
                 return true
             }
         }
