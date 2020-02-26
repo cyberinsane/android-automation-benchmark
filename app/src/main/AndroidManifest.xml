@@ -14,7 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".DummyActivity" />
         <activity android:name=".ui.AddCardActivity" />
         <activity android:name=".ui.signup.SignUpActivity" />
         <activity
